@@ -1,0 +1,10 @@
+2024-06-07 11:08:36,819 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-06-07 11:08:36,848 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-06-07 11:08:36,851 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--format: "value(projectNumber)", PROJECT_ID_OR_NUMBER: "neo4j-field-engineering-apac"]
+2024-06-07 11:08:37,073 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-06-07 11:08:37,190 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/neo4j-field-engineering-apac?alt=json HTTP/1.1" 200 None
+2024-06-07 11:08:37,193 DEBUG    root            Chosen display Format:default value(projectNumber)
+2024-06-07 11:08:37,194 INFO     root            Display format: "default value(projectNumber)"
+2024-06-07 11:08:37,234 INFO     ___FILE_ONLY___ 1046527356828
+
+2024-06-07 11:08:37,234 DEBUG    root            SDK update checks are disabled.

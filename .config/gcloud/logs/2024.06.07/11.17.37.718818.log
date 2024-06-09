@@ -1,0 +1,8 @@
+2024-06-07 11:17:37,720 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-06-07 11:17:37,722 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-06-07 11:17:37,725 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "value(configuration.properties.api_endpoint_overrides.cloudresourcemanager)"]
+2024-06-07 11:17:37,738 DEBUG    root            Chosen display Format:default value(configuration.properties.api_endpoint_overrides.cloudresourcemanager)
+2024-06-07 11:17:37,739 INFO     root            Display format: "default value(configuration.properties.api_endpoint_overrides.cloudresourcemanager)"
+2024-06-07 11:17:37,777 INFO     ___FILE_ONLY___ 
+
+2024-06-07 11:17:37,777 DEBUG    root            SDK update checks are disabled.

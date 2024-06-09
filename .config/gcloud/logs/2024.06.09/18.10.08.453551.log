@@ -1,0 +1,8 @@
+2024-06-09 18:10:08,455 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-06-09 18:10:08,457 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-06-09 18:10:08,460 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "value(configuration.properties.api_endpoint_overrides.cloudkms)"]
+2024-06-09 18:10:08,474 DEBUG    root            Chosen display Format:default value(configuration.properties.api_endpoint_overrides.cloudkms)
+2024-06-09 18:10:08,475 INFO     root            Display format: "default value(configuration.properties.api_endpoint_overrides.cloudkms)"
+2024-06-09 18:10:08,515 INFO     ___FILE_ONLY___ 
+
+2024-06-09 18:10:08,515 DEBUG    root            SDK update checks are disabled.

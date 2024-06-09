@@ -1,0 +1,8 @@
+2024-06-07 11:07:11,470 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-06-07 11:07:11,534 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2024-06-07 11:07:11,537 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "project"]
+2024-06-07 11:07:11,542 DEBUG    root            Chosen display Format:value(.)
+2024-06-07 11:07:11,542 INFO     root            Display format: "value(.)"
+2024-06-07 11:07:11,543 INFO     ___FILE_ONLY___ neo4j-field-engineering-apac
+
+2024-06-07 11:07:11,543 DEBUG    root            SDK update checks are disabled.

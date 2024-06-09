@@ -1,0 +1,8 @@
+2024-06-09 18:10:42,844 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-06-09 18:10:42,847 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-06-09 18:10:42,849 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "value(configuration.properties.core.project)"]
+2024-06-09 18:10:42,864 DEBUG    root            Chosen display Format:default value(configuration.properties.core.project)
+2024-06-09 18:10:42,865 INFO     root            Display format: "default value(configuration.properties.core.project)"
+2024-06-09 18:10:42,906 INFO     ___FILE_ONLY___ neo4j-field-engineering-apac
+
+2024-06-09 18:10:42,906 DEBUG    root            SDK update checks are disabled.

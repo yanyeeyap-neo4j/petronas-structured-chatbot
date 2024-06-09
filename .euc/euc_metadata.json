@@ -1,0 +1,34 @@
+{
+  "instance": {
+    "attributes": {
+      "block-project-ssh-keys": "TRUE",
+      "custom-containers": "{}",
+      "enable-guest-attributes": "TRUE",
+      "enable-oslogin": "TRUE",
+      "idle-timeout-seconds": "10800",
+      "image-url": "projects/cloud-notebooks-managed/global/images/family/beatrix-notebooks-debian-11-py310",
+      "install-unattended-upgrades": "False",
+      "notebooks-api": "PROD",
+      "proxy-backend-id": "7a50b14765550300",
+      "proxy-registration-url": "https://us-central1.notebooks.cloud.google.com/tun/m/4592f092208ecc84946b8f8f8016274df1b36a14",
+      "proxy-url": "7a50b14765550300-dot-us-central1.notebooks.googleusercontent.com",
+      "report-system-health": "True",
+      "runtime-owner": "1046527356828-compute@developer.gserviceaccount.com",
+      "runtime-project-number": "1046527356828",
+      "runtime-resource-name": "projects/neo4j-field-engineering-apac/locations/us-central1/runtimes/yanyee-petronas-chatbot",
+      "runtime-tenant-project-number": "379344405682",
+      "runtime-uid": "cbc621b8-6a47-4a99-b229-df53f561e772",
+      "shutdown-script": "/opt/deeplearning/bin/shutdown_script.sh",
+      "stop-state": "UNSPECIFIED"
+    },
+    "image": "projects/cloud-notebooks-managed/global/images/beatrix-notebooks-v20240417-debian-11-py310",
+    "machineType": "projects/379344405682/machineTypes/n1-standard-4",
+    "name": "vm-cbc621b8-6a47-4a99-b229-df53f561e772",
+    "zone": "projects/379344405682/zones/us-central1-b"
+  },
+  "project": {
+    "attributes": {},
+    "numericProjectId": 379344405682,
+    "projectId": "j3b494e437842c68f-tp"
+  }
+}
