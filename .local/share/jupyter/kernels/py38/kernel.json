@@ -1,0 +1,14 @@
+{
+ "argv": [
+  "/home/jupyter/conda_env/py38/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "py38",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}

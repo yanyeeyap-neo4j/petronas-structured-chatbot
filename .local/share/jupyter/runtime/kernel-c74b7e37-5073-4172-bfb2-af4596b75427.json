@@ -1,0 +1,13 @@
+{
+  "shell_port": 44925,
+  "iopub_port": 46701,
+  "stdin_port": 39309,
+  "control_port": 37527,
+  "hb_port": 59257,
+  "ip": "0.0.0.0",
+  "key": "0df60540-fd675a95d0d433cf2b496295",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "py38",
+  "jupyter_session": "/home/jupyter/petronas-chatbot/notebook/employee-chatbot.ipynb"
+}

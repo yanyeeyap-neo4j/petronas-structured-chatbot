@@ -1,0 +1,11 @@
+libdir=/home/jupyter/conda_env/py38/lib
+includedir=/home/jupyter/conda_env/py38/include
+enginesdir=/home/jupyter/conda_env/py38/lib/engines-3
+modulesdir=/home/jupyter/conda_env/py38/lib/ossl-modules
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.1
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread
+Cflags: -I${includedir}

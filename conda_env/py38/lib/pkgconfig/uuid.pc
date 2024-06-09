@@ -1,0 +1,11 @@
+prefix=/home/jupyter/conda_env/py38
+exec_prefix=/home/jupyter/conda_env/py38
+libdir=/home/jupyter/conda_env/py38/lib
+includedir=/home/jupyter/conda_env/py38/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid
