@@ -14,7 +14,7 @@ st.markdown("""
     <div style='text-align: center;'>
         <img src='data:image/png;base64,{}' style='max-width: 100%; max-height: 100%;'>
     </div>
-""".format(petronas.decode("utf-8")), unsafe_allow_html=True)
+""".format(st.image(petronas), unsafe_allow_html=True)
 
 st.markdown("""
     <style>
