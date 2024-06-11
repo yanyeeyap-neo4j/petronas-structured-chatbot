@@ -2,30 +2,11 @@ import streamlit as st
 from PIL import Image
 import base64
 
-petronas = Image.open('./images/Petronas_Logo.png')
-
 st.set_page_config(
     page_title="PETRONAS Employee and Training Chatbot",
     page_icon="🧠",
     layout="wide",
 )
-
-# # Display the uploaded image at the top and center
-# st.markdown("""
-#     <div style='text-align: center;'>
-#         <img src='data:image/png;base64,{}' style='max-width: 100%; max-height: 100%;'>
-#     </div>
-# """.format(st.image(petronas, use_column_width=False)), unsafe_allow_html=True)
-
-# Convert the image data to base64
-image_data = base64.b64encode(petronas.tobytes()).decode("utf-8")
-
-# Display the uploaded image at the top and center
-st.markdown("""
-    <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' style='max-width: 100px;'>
-    </div>
-""".format(image_data), unsafe_allow_html=True)
 
 st.markdown("""
     <style>

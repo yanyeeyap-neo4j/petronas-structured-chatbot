@@ -12,16 +12,7 @@ vertexai.init(project=st.secrets["GCP_PROJECT"],
 # Hardcoded UserID
 USER_ID = "bot"
 
-petronas = Image.open('./images/Petronas_Logo.png')
-
 st.set_page_config(page_icon="🧠", layout="wide")
-
-# Display the uploaded image at the top and center
-st.markdown("""
-    <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' width="50">
-    </div>
-""".format(st.image(petronas, use_column_width=True)), unsafe_allow_html=True)
 
 st.markdown("""
     <style>
