@@ -9,12 +9,22 @@ st.set_page_config(
     layout="wide",
 )
 
+# # Display the uploaded image at the top and center
+# st.markdown("""
+#     <div style='text-align: center;'>
+#         <img src='data:image/png;base64,{}' style='max-width: 100%; max-height: 100%;'>
+#     </div>
+# """.format(st.image(petronas, use_column_width=False)), unsafe_allow_html=True)
+
+# Convert the image data to base64
+image_data = base64.b64encode(petronas.tobytes()).decode("utf-8")
+
 # Display the uploaded image at the top and center
 st.markdown("""
     <div style='text-align: center;'>
         <img src='data:image/png;base64,{}' style='max-width: 100%; max-height: 100%;'>
     </div>
-""".format(st.image(petronas, use_column_width=False)), unsafe_allow_html=True)
+""".format(image_data), unsafe_allow_html=True)
 
 st.markdown("""
     <style>
