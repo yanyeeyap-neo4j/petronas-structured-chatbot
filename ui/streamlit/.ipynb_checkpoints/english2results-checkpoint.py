@@ -29,9 +29,14 @@ Schema:
 {schema}
 Samples:
 Question: Who are the employees who have taken Customer Service program but has not completed?
-Answer: MATCH (e:Employee)-[t:TAKEN_TRAINING]->(p:Program)
-WHERE toLower(p.ProgramName) CONTAINS 'customer service' AND t.TrainingOutcome <> 'Completed'
-RETURN e.FirstName, e.LastName;
+Answer: MATCH (e:Employee)-[t:TAKEN_TRAINING]->(p:Program) WHERE toLower(p.ProgramName) CONTAINS 'customer service' AND t.TrainingOutcome <> 'Completed' RETURN e.FirstName, e.LastName
+Question: What are the programs available?
+Answer: MATCH (p:Program) RETURN p.ProgramName
+Question: How many people failed the Technical Skills program?
+Answer: MATCH (e:Employee)-[t:TAKEN_TRAINING]->(p:Program) WHERE toLower(p.ProgramName) CONTAINS 'technical skills' AND toLower(t.TrainingOutcome) CONTAINS 'fail' RETURN count(e)
+Question: How many employees are there?
+Answer: MATCH (e:Employee) RETURN count(e)
+Question: {question}
 Answer:
 """
 CYPHER_GENERATION_PROMPT = PromptTemplate(
