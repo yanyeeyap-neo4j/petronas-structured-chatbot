@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-petronas = Image.open('./images/Petronas_Logo.png').resize((300, 300))
+petronas = Image.open('./images/Petronas_Logo.png')
 
 st.set_page_config(
     page_title="PETRONAS Employee and Training Chatbot",
@@ -12,10 +12,9 @@ st.set_page_config(
 # Display the uploaded image at the top and center
 st.markdown("""
     <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' width="300">
+        <img src='data:image/png;base64,{}' style='width: 20%;'>
     </div>
 """.format(st.image(petronas, use_column_width=True)), unsafe_allow_html=True)
-
 
 st.markdown("""
     <style>
