@@ -63,6 +63,11 @@ def get_results(messages):
                     return_intermediate_steps=True,
                     cypher_prompt=CYPHER_GENERATION_PROMPT
         )
+        if messages:
+            question = messages.pop()
+        else: 
+            question = 'How many cases are there?'
+        return chain(question)
     finally:
         print('Cypher Generation Time : {}'.format(timer() - start))
         
