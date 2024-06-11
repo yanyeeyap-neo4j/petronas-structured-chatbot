@@ -54,18 +54,10 @@ def get_results(messages):
                     temperature=0,
                     top_p=0.95,
                     top_k=0.40), 
-            graph=graph, verbose=True,
-            return_intermediate_steps=True,
-            cypher_prompt=CYPHER_GENERATION_PROMPT
+                    graph=graph, verbose=True,
+                    return_intermediate_steps=True,
+                    cypher_prompt=CYPHER_GENERATION_PROMPT
         )
-        if messages:
-            question = messages.pop()
-        else: 
-            question = 'How many employees are there?'
-        return chain(question)
-    # except Exception as ex:
-    #     print(ex)
-    #     return "LLM Quota Exceeded. Please try again"
     finally:
         print('Cypher Generation Time : {}'.format(timer() - start))
-
+        
