@@ -12,9 +12,9 @@ st.set_page_config(
 # Display the uploaded image at the top and center
 st.markdown("""
     <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' style='width: 20%;'>
+        <img src='data:image/png;base64,{}' width="300">
     </div>
-""".format(st.image(petronas, use_column_width=True)), unsafe_allow_html=True)
+""".format(st.image(petronas, use_column_width=False)), unsafe_allow_html=True)
 
 st.markdown("""
     <style>
