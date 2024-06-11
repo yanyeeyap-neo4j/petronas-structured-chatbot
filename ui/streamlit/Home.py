@@ -1,17 +1,10 @@
-import time
-
-import numpy as np 
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
-from neo4j_driver import run_query
-import streamlit.components.v1 as components
+from PIL import Image
 
 petronas = Image.open('./images/Petronas_Logo.png')
 
 st.set_page_config(
-    page_title="PETRONA Employee and Training Chatbot",
+    page_title="PETRONAS Employee and Training Chatbot",
     page_icon="🧠",
     layout="wide",
 )

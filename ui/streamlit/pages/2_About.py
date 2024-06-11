@@ -49,7 +49,4 @@ This is how the Chatbot flow goes:
 """)
 st.image(langchain)
 
-# Display the uploaded image if needed
-st.markdown("""
----
 

@@ -15,7 +15,14 @@ USER_ID = "bot"
 petronas = Image.open('./images/Petronas_Logo.png')
 
 st.set_page_config(page_icon="🧠", layout="wide")
-st.image(petronas, width=150)
+
+# Display the PETRONAS image at the top and center
+st.markdown("""
+<div style='text-align: center;'>
+    <img src='data:image/png;base64,{}' class='img-fluid'>
+</div>
+""".format(st.image(petronas, use_column_width=True)), unsafe_allow_html=True)
+
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
