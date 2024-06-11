@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-petronas = Image.open('./images/Petronas_Logo.png')
+petronas = Image.open('./images/Petronas_Logo.png').resize((300, 300))
 
 st.set_page_config(
     page_title="PETRONAS Employee and Training Chatbot",
