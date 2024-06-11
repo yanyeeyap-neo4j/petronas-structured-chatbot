@@ -2,7 +2,7 @@ import streamlit as st
 import vertexai
 from streamlit_chat import message
 from streamlit.components.v1 import html
-
+from PIL import Image
 from english2results import get_results
 from timeit import default_timer as timer
 
