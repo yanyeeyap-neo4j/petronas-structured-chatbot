@@ -36,6 +36,8 @@ Question: How many people failed the Technical Skills program?
 Answer: MATCH (e:Employee)-[t:TAKEN_TRAINING]->(p:Program) WHERE toLower(p.ProgramName) CONTAINS 'technical skills' AND toLower(t.TrainingOutcome) CONTAINS 'fail' RETURN count(e)
 Question: How many employees are there?
 Answer: MATCH (e:Employee) RETURN count(e)
+Question: Who has Bryan Foley as their supervisor?
+Answer: MATCH (e:Employee WHERE toLower(s.Supervisor) CONTAINS 'bryan foley' RETURN e.FirstName, e.LastName
 Question: {question}
 Answer:
 """
