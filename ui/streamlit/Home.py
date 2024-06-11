@@ -23,7 +23,7 @@ image_data = base64.b64encode(petronas.tobytes()).decode("utf-8")
 # Display the uploaded image at the top and center
 st.markdown("""
     <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' style='max-width: 100%; max-height: 100%;'>
+        <img src='data:image/png;base64,{}' style='max-width: 300px;'>
     </div>
 """.format(image_data), unsafe_allow_html=True)
 
