@@ -21,29 +21,19 @@ CYPHER_GENERATION_TEMPLATE = """You are an expert Neo4j Cypher translator who un
 2. Do not use EXISTS, SIZE keywords in the cypher. Use alias when using the WITH keyword
 3. Use only Nodes and relationships mentioned in the schema
 4. Always enclose the Cypher output inside 3 backticks
-5. Always do a case-insensitive and fuzzy search for any properties related search. Eg: to search for a Team name use `toLower(t.name) contains 'neo4j'`
-6. Always use aliases to refer the node in the query
-7. Cypher is NOT SQL. So, do not mix and match the syntaxes
+5. Always do a case-insensitive and fuzzy search for any properties related search. Eg: to search for a Company name use `toLower(c.name) contains 'neo4j'`
+6. Candidate node is synonymous to Person
+7. Always use aliases to refer the node in the query
+8. Cypher is NOT SQL. So, do not mix and match the syntaxes
 Schema:
 {schema}
 Samples:
-Question: What are the predictions about the Swans?
-Answer: MATCH (e:Episode)-[:HAS_PREDICTION]->(p:Prediction) WHERE toLower(p.name) CONTAINS 'swans' RETURN p.name
-Question: Who are the players mentioned in episode 1?
-Answer: MATCH (e:Episode)-[:DISCUSSES_PLAYER]->(p:Player) WHERE e.episode = '1' RETURN p.name
-Question: What are the top 5 common themes across all episodes combined?
-Answer: MATCH (e:Episode)-[:HAS_THEME]->(t:Theme) RETURN t.name as theme, count(*) as num_themes ORDER BY num_themes DESC LIMIT 5
-Question: Who are the most commonly talked coaches?
-Answer: MATCH (e:Episode)-[:DISCUSSES_COACH]->(p:Coach) RETURN DISTINCT p.name as coach, count(e) as num_mentions  ORDER BY num_mentions DESC LIMIT 5
-Question: What is the gist of episode 4?
-Answer: MATCH (e:Episode) WHERE e.episode = '4' RETURN e.synopsis
-Question: Which episodes do you recommend if I am a fan of the Bombers?
-Answer: Match(e:Episode)-[:DISCUSSES_TEAM]->(t:Team) WHERE toLower(t.name) contains 'bombers' return e
-Question: I follow Mason Cox. Which episodes do you recommend?
-Answer: MATCH (e:Episode)-[:DISCUSSES_PLAYER]->(p:Player) WHERE toLower(p.name) CONTAINS 'mason cox' RETURN e
-
-Question: {question}
-Answer:"""
+Question: Who are the employees who have taken Customer Service program but has not completed?
+Answer: MATCH (e:Employee)-[t:TAKEN_TRAINING]->(p:Program)
+WHERE toLower(p.ProgramName) CONTAINS 'customer service' AND t.TrainingOutcome <> 'Completed'
+RETURN e.FirstName, e.LastName;
+Answer:
+"""
 CYPHER_GENERATION_PROMPT = PromptTemplate(
     input_variables=["schema", "question"], template=CYPHER_GENERATION_TEMPLATE
 )
