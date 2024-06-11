@@ -1,0 +1,13 @@
+{
+  "shell_port": 46509,
+  "iopub_port": 50597,
+  "stdin_port": 58279,
+  "control_port": 46255,
+  "hb_port": 37755,
+  "ip": "0.0.0.0",
+  "key": "7961cb6a-ee70b44039481f5f3613899d",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "py38",
+  "jupyter_session": "/home/jupyter/notebook/employee-chatbot.ipynb"
+}

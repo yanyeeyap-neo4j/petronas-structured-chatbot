@@ -1,0 +1,8 @@
+2024-06-10 07:45:40,709 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-06-10 07:45:40,711 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-06-10 07:45:40,714 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "value(credential.access_token)"]
+2024-06-10 07:45:40,730 DEBUG    root            Chosen display Format:default value(credential.access_token)
+2024-06-10 07:45:40,730 INFO     root            Display format: "default value(credential.access_token)"
+2024-06-10 07:45:40,769 INFO     ___FILE_ONLY___ ya29.c.c0AY_VpZj6Avyd652tkA7i9e_sDJGEmek7Q70aB1tFn-3wMl9n2Jiw7iJueM9I0XPQYsPfBFhV0i8YkB-F_2S8aw6g9Ut46cKhxxEoPZ8Nvs8EkSXm1DRWPrdc1iT42Oq25VBxP1ONb38JzAYtQ0AbeVUB4aUkwLx_LoFXCOvFacaRozuV6mRawKfYuJSRs1Jip4g8fjQawJtQFBJGp0d5FESu87V_oAR9t3AZQXu6_l1tr2GcNbiNKoWrL0Xkmc_cNkfS3X-TIeLlPEEZmoLK0NTF8mskRcvHTJ6E6sbL2ns9ZriwjAyFYo63NSTp2HXdYimOIv6Yi7kQjMZg1wRcs4XqW9gL1gXclrvspbRcEaCsbFjm_or85bLEquvnqGbvXPU57TMNoEdxwgw4exPz01XwGwC-fKCkIMycLLqZNqGuo1-HUSNSiOt6zPlQL453Cl54xYaew6BS78uUR5skMJMY21YWy6bY2SYxq3ZB2UMxrzFsQx6qWa9dq5Q3lhkemmy0XFsRwM6XIRS_aprYhSvzSQk6cBwmUgm-WgS2s0ymgXe3t8ztc6-Mn0jaw9BaOc1RibI-wbpsUiZ9VWfYk7B3e3JytRU_7ogF8YXp4d34W1Juzzqb-W6b1a4mtsezuQpm6zcnF6Ws3FzIUysQ7ZngQxkfdr8MgyFWl17hnR1MfrOY7jcf3ij9o12h9qpev7pJZ87-6-xlQ7-8y326M38pz43nxfeeZlv8_-tWdbaf-_xwWJ-QXm1vkrv_fFfYOV_4mqmUz9fXzvOXy-FOzFUpjxYa9UyhYswqJp2jl1J5Yv2ejgnRmvrukj9Q-0fQF1q3oeuhUIO2xZdw8QrW1O5jlMB7I1fMev4bX4xuI4v40YBYZFymhVxUe-igUag3heOMu3RQh3_Qqxx3x1ovUBt29fsO1-ncXseIUupx7FzwMn0evjaa3VvIx1UXpWl589km3QdqiIm-iwMJkSqz1de4bwaSvWvhjMq3_j59vZbtJoBJZXv8m2h
+
+2024-06-10 07:45:40,769 DEBUG    root            SDK update checks are disabled.
